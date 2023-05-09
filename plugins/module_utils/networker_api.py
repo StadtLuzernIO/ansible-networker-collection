@@ -136,8 +136,6 @@ class networker:
                     "vmUuids": vms_uuid_cleaned,
                 }
             }
-            print("heeeeeeeeeeeeeeereee")
-            print(data)
             self._send_request(path, method="POST", data=data)
             
             result['uuids'] = vms_uuid_cleaned
@@ -177,8 +175,6 @@ def raise_for_error(response_info):
             "message": response_info.get("msg", "Error not defined"),
             "status_code": response_info.get("status")
         }
-
-    print(err_details)
 
     # error handling
     if err_details["status_code"] >= 500:
