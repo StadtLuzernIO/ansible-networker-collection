@@ -36,6 +36,7 @@ EXAMPLES = '''
     username: api
     password: mySuperSecretPassword
     wait_for: 10
+  delegate_to: localhost
 '''
 
 RETURN = '''

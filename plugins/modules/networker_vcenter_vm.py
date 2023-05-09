@@ -55,6 +55,7 @@ EXAMPLES = '''
     - demo01
     protection_group: gold
     state: present
+  delegate_to: localhost
 - name: Remove a vm from a specific networker protection group
   stadtluzernio.networker.networker_vcenter_vm:
     hostname: https://networker.company.com:9090
@@ -65,6 +66,7 @@ EXAMPLES = '''
     - demo01
     protection_group: gold
     state: absent
+  delegate_to: localhost
 '''
 
 RETURN = '''
@@ -110,7 +112,7 @@ def main():
         if module.params.get("state") == 'present':
             action = 'add'
         else:
-            action = 'remove'
+            action = 'delete'
 
         api_response            = {}    
         api_response            = api_client.update_vm_protectiongroup(module.params.get("vm_names"), action, module.params.get("protection_group"), module.params.get("vcenter"))
