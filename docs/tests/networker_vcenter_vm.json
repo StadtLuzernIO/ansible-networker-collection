@@ -1,0 +1,12 @@
+{
+    "ANSIBLE_MODULE_ARGS": {
+        "hostname": "https://networker.company.com:9090",
+        "vcenter": "vcenter.company.com",
+        "vm_names": [
+            "demo01",
+            "demo02"
+        ],
+        "validate_certs": false,
+        "protection_group": "Gold_NVP_vCenter"
+    }
+}

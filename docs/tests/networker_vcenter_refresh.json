@@ -1,0 +1,7 @@
+{
+    "ANSIBLE_MODULE_ARGS": {
+        "hostname": "https://networker.company.com:9090",
+        "validate_certs": false,
+        "wait_for": 10
+    }
+}
