@@ -14,8 +14,8 @@ Networker collection to interact with DELL EMC Networker. Currently it is only s
 - [License](#license)
 
 ### Requirements
-- Python >= 3.9.0 (all other versions are not tested)
-- Ansible Core >= 2.14.4 (all other versions are not tested)
+- Python >= 3.9.0 (lower versions are not tested)
+- Ansible Core >= 2.13.8 (lower versions are not tested)
 
 ## Installation
 You can install the Ansible collection from [Ansible Galaxy](https://galaxy.ansible.com/stadtluzernio/networker):

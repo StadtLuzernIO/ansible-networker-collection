@@ -99,7 +99,7 @@ class networker:
             try:
                 vm_uuid.append(networker_all_vms_dict[vm_name]) 
             except:
-                if action != 'remove':
+                if action != 'delete':
                     raise networker_errors.NotFoundError(
                         message= f"VM {vm_name} not found in Networker"
                     )
